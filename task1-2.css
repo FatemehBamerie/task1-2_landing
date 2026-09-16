@@ -650,3 +650,86 @@ footer p {
 .testimonial-card:hover::before {
     transform: scale(1.8);
 }
+
+/* ==========================================
+   📱 Mobile & Tablet Responsive Styles
+   ========================================== */
+
+@media (max-width: 992px) {
+    /* ۱. تنظیم هدر و منو */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ۲. تنظیم بخش Hero (هیرو) */
+    .hero {
+        flex-direction: column;
+        padding: 60px 5%;
+        min-height: auto;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px; /* کوچک‌تر کردن تیتر برای صفحه گوشی */
+    }
+
+    .hero-content > p:not(.subtitle) {
+        font-size: 15px;
+        margin: 0 auto 25px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* ۳. تک ستونه کردن کارت‌های Services */
+    .service-container {
+        grid-template-columns: 1fr; /* تبدیل به ۱ ستون در موبایل */
+        gap: 20px;
+    }
+
+    /* ۴. تک ستونه کردن کارت‌های Features */
+    .feature-container {
+        grid-template-columns: 1fr; /* تبدیل به ۱ ستون در موبایل */
+        gap: 15px;
+    }
+
+    /* ۵. تک ستونه کردن Testimonials */
+    .testimonial-container {
+        grid-template-columns: 1fr; /* تبدیل به ۱ ستون در موبایل */
+        gap: 20px;
+    }
+
+    /* ۶. تنظیم بخش CTA */
+    .cta {
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    /* ۷. تنظیم فوتر */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
